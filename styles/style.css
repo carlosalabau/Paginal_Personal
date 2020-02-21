@@ -2,19 +2,24 @@
     margin: 0;
     padding: 0;
 }
+body{
+    position: relative;
+}
 /* Estilos del menu */
 .btn-menu{
     font-size: 34px;
     color: blue;
     margin-left: 120px;
+    margin-top: 105px;
+    position: absolute;
 }
 nav{
     background-color: #496080;
-    width: 40vw;
-    position: fixed;
+    width: 37vw;
     color: white;
     border-right: 1px solid grey;
     height: 100vh;
+    display: ;
 }
 body>nav>h1{
     background-color: #224980;
@@ -44,4 +49,19 @@ body>nav>ul{
 nav>ul>a{
     text-decoration: none;
     color: rgb(218, 211, 211);
+}
+.btn-cerrar_menu{
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    width: 40vw;
+    margin-top: 40px;
+}
+.btn-cerrar_menu i{
+    transform: rotate(45deg);
+    font-size: 32px;
+    color: black;
+}
+body>nav, .btn-cerrar_menu{
+    display: none;
 }
