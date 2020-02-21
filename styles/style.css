@@ -8,7 +8,7 @@ body{
     flex-wrap: wrap;
 }
 /* Estilos del menu */
-.btn-menu{
+.btn-menu, .cerrar-menu{
     font-size: 34px;
     color: white;
     margin-left: 120px;
@@ -17,29 +17,21 @@ body{
     cursor: pointer;
 }
 nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     background-color: #496080;
-    width: 37%;
+    width: 100vw;
     color: white;
-    height: 100vh;
+    height: 10vh;
 }
-body>nav>h1{
-    background-color: #224980;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    height: 80px;
-}
-body>nav>ul{
+body>nav ul{
     list-style: none;
-    display: flex;
-    justify-content: flex-start;
-    padding: 0;
-    flex-direction: column;
 }
 .list-menu{
-    padding: 10px 0 10px 0;
-    border-bottom: 1px solid grey;
+    padding: 20px;
+    display: inline;
+    border-right: 1px solid grey;
 }
 .list-menu i{
     margin-right: 6px;
@@ -47,25 +39,20 @@ body>nav>ul{
 .active{
     background-color: #153f7a;
 }
-nav>ul>a{
+nav ul a{
     text-decoration: none;
     color: rgb(218, 211, 211);
 }
-.btn-cerrar_menu{
-    position: absolute;
-    top: 40px;
-    left: 39%;
-    width: 40vw;
-    cursor: pointer;
-
+nav>div:nth-child(1){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px
 }
-.btn-cerrar_menu i{
-    transform: rotate(45deg);
-    font-size: 32px;
-    color: white;
-}
-body>nav, .btn-cerrar_menu{
-    display: none;
+nav>div:nth-child(2){
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 /* Estilos de la portada */
 .container{
@@ -84,7 +71,6 @@ body>nav, .btn-cerrar_menu{
     background: linear-gradient(to right, #0855e2, #008e9b);
 }
 main{
-    width: 100vw;
     display: flex;
     align-items: center;
     flex-direction: column;

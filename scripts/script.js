@@ -1,15 +1,16 @@
 $(document).ready(function(){
     $("nav").hide();
+    $(".cerrar-menu").hide();
     $(".btn-menu").click(function(){
-       $(".portada").css("width","63%");
-       $(".btn-cerrar_menu").show();
+       $("nav").show();
+       $(".portada").css("height","90vh");
+       $(".cerrar-menu").show();
        $(".btn-menu").hide();
-        $("nav").show();
     })
-    $(".btn-cerrar_menu").click(function(){
-        $(".portada").css("width","100vw");
+    $(".cerrar-menu").click(function(){
+        $(".portada").css("height","100vh");
         $(".btn-menu").show();
-        $(".btn-cerrar_menu").hide();
+        $(".cerrar-menu").hide();
         $("nav").hide();
     })
 })
