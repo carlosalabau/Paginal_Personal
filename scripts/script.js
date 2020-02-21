@@ -1,0 +1,15 @@
+$(document).ready(function(){
+    $("nav").hide();
+    $(".btn-menu").click(function(){
+       $(".portada").css("width","63%");
+       $(".btn-cerrar_menu").show();
+       $(".btn-menu").hide();
+        $("nav").show();
+    })
+    $(".btn-cerrar_menu").click(function(){
+        $(".portada").css("width","100vw");
+        $(".btn-menu").show();
+        $(".btn-cerrar_menu").hide();
+        $("nav").hide();
+    })
+})
