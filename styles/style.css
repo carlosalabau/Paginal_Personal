@@ -1,4 +1,5 @@
 /* Estilos del body */
+
 *{
     margin: 0;
     padding: 0;
@@ -8,6 +9,7 @@ body{
     flex-wrap: wrap;
 }
 /* Estilos del menu */
+
 .btn-menu, .cerrar-menu{
     font-size: 34px;
     color: white;
@@ -25,19 +27,19 @@ nav{
     color: white;
     height: 10vh;
 }
-body>nav ul{
+body>nav>ul{
     list-style: none;
 }
 .list-menu{
     padding: 20px;
     display: inline;
-    border-right: 1px solid grey;
 }
 .list-menu i{
     margin-right: 6px;
 }
 .active{
     background-color: #153f7a;
+    width: 100%;
 }
 nav ul a{
     text-decoration: none;
@@ -55,6 +57,7 @@ nav>div:nth-child(2){
     align-items: center;
 }
 /* Estilos de la portada */
+
 .container{
     width: 100vw;
 }
@@ -70,7 +73,7 @@ nav>div:nth-child(2){
     background: -o-linear-gradient(left, #0855e2, #008e9b);
     background: linear-gradient(to right, #0855e2, #008e9b);
 }
-main{
+.portada>main{
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -81,4 +84,104 @@ main{
     height: 5px;
     border-bottom: 1px solid white;
     margin: 10px 0 10px 0;
+}
+
+/* Estilos de about */
+
+.titulo-about{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    margin-top: 40px;
+}
+.hr{
+    width: 25vw;
+    border-color: black;
+}
+.about>main>section:nth-child(2){
+    display: grid;
+    grid-template-columns: 10% 40% 40% 10%;
+    grid-template-rows: 100%;
+    margin-top: 50px;
+}
+.img-personal{
+   grid-column-start: 2;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.img-personal img{
+    width: 25vw;
+}
+.descripcion{
+    grid-column-start: 3;
+    text-align: justify;
+}
+.descripcion p{
+    margin-top: 20px;
+}
+.btn-menu-about,.cerrar-menu-about{
+    font-size: 34px;
+    color: black;
+    margin-left: 120px;
+    margin-top: 105px;
+    position: absolute;
+    cursor: pointer;
+}
+.color-tech{
+    width: 20px;
+    height: 20px;
+
+}
+.box-blue{
+    background-color: blue;
+}
+.box-green{
+    background-color: green;
+}
+.box-yellow{
+    background-color: yellow;
+}
+.box-red{
+    background-color: red;
+}
+.progreso{
+    width: 400px;
+    height: 20px;
+    background-color: grey;
+    position: relative;
+    border-radius: 2px;
+}
+.bar-blue{
+    width: 300px;
+    background-color: blue;
+    z-index: 10000;
+    height: 20px;
+    padding-left: 5px;
+    border-radius: 2px;
+}
+.tecnologias>ul{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.tecnologias>ul>li{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+.tecnologias>ul>li>aside:nth-child(1){
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+}
+.segunda{
+    margin-top: 100px;
+}
+.segunda>div{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
