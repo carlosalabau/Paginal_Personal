@@ -1,0 +1,70 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página personal</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/746846aaa2.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="scripts/script.js"></script>
+</head>
+
+<body>
+  <!-- Menu lateral -->
+  <div class="btn-menu-about"><i class="fas fa-bars"></i></div>
+  <div class="cerrar-menu-about"><i class="far fa-window-close"></i></div>
+  <nav>
+    <div>
+      <h1>MENU</h1>
+    </div>
+    <div>
+      <ul>
+        <a href="index.html">
+          <li class="list-menu"><i class="fas fa-home"></i> Inicio</li>
+        </a>
+        <a href="about.html">
+          <li class="list-menu"><i class="fas fa-address-card"></i>Sobre mi</li>
+        </a>
+        <a href="contact.html">
+          <li class="list-menu active"><i class="fas fa-envelope"></i>Contacto</li>
+        </a>
+      </ul>
+    </div>
+  </nav>
+  <!-- Formularios de contacto -->
+    <div class="contact">
+      <main>
+        <div class="titulo-about">
+          <h1>Contacto</h1>
+          <div class="hr"></div>
+        </div>
+        <div class="formulario">
+          <form action="#" class="form" method="POST">
+            <label for="name">Nombre</label><input type="text" />
+            <label for="email">Email</label><input type="email">
+            <label for="tlf">Telefono</label><input type="number">
+            <label for="empresa">Empresa</label><input type="text">
+            <label for="propuesta">Propuesta</label><textarea name="prop" rows="6"></textarea>
+            <div class="btn-enviar-form"><button type="button">Enviar</button></div>
+          </form>
+        </div>
+      </main>
+      <footer>
+        <div class="detalles">
+          <div class="titulo-about">
+            <h2>Detalles</h2>
+            <div class="hr"></div>
+          </div>
+          <ul>
+            <li><i class="fas fa-street-view"></i>Avenida Moll de Ponent</li>
+            <li><i class="fas fa-phone-alt"></i>666666666</li>
+            <li><i class="fas fa-envelope"></i>info@prueba.com</li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+</body>
+
+</html>

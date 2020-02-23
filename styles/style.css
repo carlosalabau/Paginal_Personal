@@ -1,205 +1,330 @@
 /* Estilos del body */
-
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 body{
-    display: flex;
-    flex-wrap: wrap;
+  font-family: 'Nunito';
 }
+
 /* Estilos del menu */
+.btn-menu, .cerrar-menu {
+  font-size: 34px;
+  color: white;
+  margin-left: 120px;
+  margin-top: 105px;
+  position: absolute;
+  cursor: pointer;
+}
 
-.btn-menu, .cerrar-menu{
-    font-size: 34px;
-    color: white;
-    margin-left: 120px;
-    margin-top: 105px;
-    position: absolute;
-    cursor: pointer;
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #033796;
+  color: white;
+  height: 10vh;
 }
-nav{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    background-color: #496080;
-    width: 100vw;
-    color: white;
-    height: 10vh;
+
+body>nav>ul {
+  list-style: none;
 }
-body>nav>ul{
-    list-style: none;
+
+.list-menu {
+  padding: 20px;
+  display: inline;
 }
-.list-menu{
-    padding: 20px;
-    display: inline;
+
+.list-menu i {
+  margin-right: 6px;
 }
-.list-menu i{
-    margin-right: 6px;
+
+.active {
+  background-color: #153f7a;
+  padding: 21px;
 }
-.active{
-    background-color: #153f7a;
-    padding: 24px;
+
+nav ul a {
+  text-decoration: none;
+  color: rgb(218, 211, 211);
 }
-nav ul a{
-    text-decoration: none;
-    color: rgb(218, 211, 211);
+
+nav>div:nth-child(1) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px
 }
-nav>div:nth-child(1){
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 20px
+
+nav>div:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-nav>div:nth-child(2){
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 /* Estilos de la portada */
+.portada {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #0855e2;
+  background: -webkit-linear-gradient(left, #0855e2, #008e9b);
+  background: -moz-linear-gradient(left, #0855e2, #008e9b);
+  background: -ms-linear-gradient(left, #0855e2, #008e9b);
+  background: -o-linear-gradient(left, #0855e2, #008e9b);
+  background: linear-gradient(to right, #0855e2, #008e9b);
+}
 
-.container{
-    width: 100vw;
+.portada>main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: white;
 }
-.portada{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background: #0855e2;
-    background: -webkit-linear-gradient(left, #0855e2, #008e9b);
-    background: -moz-linear-gradient(left, #0855e2, #008e9b);
-    background: -ms-linear-gradient(left, #0855e2, #008e9b);
-    background: -o-linear-gradient(left, #0855e2, #008e9b);
-    background: linear-gradient(to right, #0855e2, #008e9b);
-}
-.portada>main{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-.hr{
-    width: 50vw;
-    border-top: 1px solid white;
-    height: 5px;
-    border-bottom: 1px solid white;
-    margin: 10px 0 10px 0;
+
+.portada .hr {
+  width: 50vw;
+  border-top: 1px solid white;
+  height: 5px;
+  border-bottom: 1px solid white;
+  margin: 10px 0 10px 0;
 }
 
 /* Estilos de about */
-
-.about{
-
-}
-main{
-
-}
-.titulo-about{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 40px 0 40px 0;
-}
-.hr{
-    width: 25vw;
-    border-color: black;
-}
-.primera{
+.titulo-about {
   display: flex;
-  justify-content:space-evenly;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 20vh;
+  color: #2E2EFF;
+}
+
+.about .hr, .contact .hr {
+  width: 25vw;
+  border-top: 1px solid #2E2EFF;
+  border-color: #2E2EFF;
+  height: 5px;
+  border-bottom: 1px solid #2E2EFF;
+  margin: 10px 0 10px 0;
+}
+
+.primera {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 70vh;
+}
+
+.img-personal {
+  display: flex;
+  width: 40vw;
+  justify-content: center;
   align-items: center;
 }
-.img-personal{
-   display: flex;
-   width: 40vw;
-   justify-content: center;
-   align-items: center;
-}
-.img-personal img{
-    width: 25vw;
-}
-.descripcion{
-    text-align: justify;
-    padding-left: 20px;
-    width: 40vw
-}
-.descripcion p{
-    margin-top: 20px;
-}
-.btn-menu-about,.cerrar-menu-about{
-    font-size: 34px;
-    color: black;
-    margin-left: 120px;
-    margin-top: 70px;
-    position: absolute;
-    cursor: pointer;
-}
-.color-tech{
-    width: 20px;
-    height: 20px;
 
+.img-personal img {
+  width: 20vw;
 }
-.box-blue{
-    background-color: blue;
+
+.descripcion {
+  text-align: justify;
+  padding-left: 20px;
+  width: 40vw
 }
-.box-green{
-    background-color: green;
+
+.descripcion p {
+  margin-top: 20px;
 }
-.box-yellow{
-    background-color: yellow;
+
+.btn-menu-about, .cerrar-menu-about {
+  font-size: 34px;
+  color: #1E53E8;
+  margin-left: 120px;
+  margin-top: 70px;
+  position: absolute;
+  cursor: pointer;
 }
-.box-red{
-    background-color: red;
+
+.color-tech {
+  width: 20px;
+  height: 20px;
 }
-.progreso{
-    width: 400px;
-    height: 20px;
-    background-color: grey;
-    position: relative;
-    border-radius: 2px;
+
+.box-blue {
+  background-color: blue;
+}
+
+.box-green {
+  background-color: green;
+}
+
+.box-yellow {
+  background-color: yellow;
+}
+
+.box-red {
+  background-color: red;
+}
+
+.progreso {
+  width: 400px;
+  height: 20px;
+  background-color: rgb(182, 182, 182);
+  position: relative;
+  border-radius: 2px;
+}
+
+.barra {
+  z-index: 10000;
+  height: 20px;
+  padding-left: 5px;
+  border-radius: 2px;
 }
 .bar-blue{
-    width: 300px;
+  width: 300px;
     background-color: blue;
-    z-index: 10000;
-    height: 20px;
-    padding-left: 5px;
-    border-radius: 2px;
 }
-.tecnologias>ul{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-    margin-top: 40px;
+.bar-green{
+  width: 280px;
+  background-color: green;
 }
-.tecnologias>ul>li{
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 20px;
+.bar-yellow{
+  width: 100px;
+  background-color: yellow;
+}
+.bar-red{
+  width:200px;
+  background-color: red;
+}
+.tecnologias>ul {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-top: 40px;
+}
 
+.tecnologias>ul>li {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
 }
-.tecnologias>ul>li>aside:nth-child(1){
-    width: 10vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
+
+.tecnologias>ul>li>aside:nth-child(1) {
+  width: 10vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
 }
-.name-tech{
-margin-left: 10px
+
+.name-tech {
+  margin-left: 10px
 }
-.tecnologias>ul>li>aside:nth-child(2){
+
+.tecnologias>ul>li>aside:nth-child(2) {
   width: 30vw;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.segunda{
-    margin-top: 100px;
+
+.segunda {
+  height: 60vh
 }
-.segunda>div{
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
+
+.segunda>div {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Estilos de la pagina de contacto */
+.contact footer .titulo-about{
+  height: 10vh;
+}
+.formulario {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  width: 100%;
+  display: grid;
+  grid-template-rows: repeat(6, 10%);
+  grid-template-columns: 15% 20% 50% 15%;
+  position:relative;
+}
+
+.form>label {
+  grid-column-start: 2;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20px;
+}
+.form>input[type="number"]{
+  width: 100%;
+}
+.form>input, .form>textarea {
+  grid-column-start: 3;
+  border-radius: 2px;
+}
+.btn-enviar-form{
+  height: 60px;
+grid-row-start: 6;
+grid-column-start: 3;
+display: flex;
+justify-content: flex-start;
+align-items: center;
+}
+.btn-enviar-form button{
+  width: 150px;
+  height: 40px;
+  color: white;
+  font-size: 18px;
+  background-color:#5671F7;
+  border-color:#5671F7;
+  border-radius: 2px;
+}
+.formulario>button{
+  width: 150px;
+  position: absolute;
+  bottom: 50px
+}
+.form>input {
+  height: 30px;
+  margin-top: 15px;
+}
+
+.detalles ul {
+  display: grid;
+  grid-template-columns: 10% 26.6% 26.6% 26.6% 10%;
+  margin-top: 20px;
+    color: white;
+}
+
+.contact footer {
+  height: 20vh;
+  background-color: #293675;
+  color: white
+}
+.contact footer h2,.contact footer .hr{
+  color: white !important;
+  border-color: white;
+}
+.detalles li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.detalles li:nth-child(1) {
+  grid-column-start: 2;
+}
+.detalles i{
+  margin-right: 10px
 }
