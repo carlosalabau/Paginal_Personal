@@ -60,6 +60,7 @@ nav>div:nth-child(2){
 
 .container{
     width: 100vw;
+    display: grid;
 }
 .portada{
     display: flex;
@@ -88,23 +89,26 @@ nav>div:nth-child(2){
 
 /* Estilos de about */
 
+.about{
+    display: grid;
+    grid-template-columns: 10% 40% 40% 10%;
+    grid-template-rows: 10% 35% 20% 35%;
+}
+main{
+    display: grid;
+}
 .titulo-about{ 
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column; 
-    margin-top: 40px;
+    grid-column: 2/3
 }
 .hr{
     width: 25vw;
     border-color: black;
 }
-.about>main>section:nth-child(2){
-    display: grid;
-    grid-template-columns: 10% 40% 40% 10%;
-    grid-template-rows: 100%;
-    margin-top: 50px;
-}
+
 .img-personal{
    grid-column-start: 2;
    display: flex;
